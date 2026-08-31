@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ease — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Ease, a daily planner for iPhone. No accounts, no analytics, no tracking.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <a class="wordmark" href="/">Ease</a>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Effective 31 August 2026 &middot; applies to the Ease iPhone app</p>
+</header>
+
+<div class="card">
+  <h2>The short version</h2>
+  <p class="lede">Ease has no accounts, no analytics, no advertising and no tracking of any kind. Your tasks, check-ins, photos, voice notes and settings are stored on your iPhone and stay there.</p>
+  <p><strong>One thing leaves your device</strong>, and only when you use one screen: when you plan a day by speaking or typing it on the Plan screen, that text is sent to Ease&rsquo;s own server so it can be sorted into tasks. It is not stored there and it is not linked to you. Everything below is the detail.</p>
+</div>
+
+<h2>What stays on your device</h2>
+<p>All of it, apart from the one exception in the next section. Ease keeps the following in its own storage on your iPhone, shared only with its own widgets and share extension:</p>
+<ul>
+  <li>Tasks, their times, durations and repeat rules, and whether you completed, skipped or moved them</li>
+  <li>Your daily check-ins and how the day felt</li>
+  <li>Pictures you attach to a task, and any text read out of them</li>
+  <li>Voice notes recorded in the evening check-in</li>
+  <li>Focus session history, and the patterns Ease works out from it</li>
+  <li>Your settings &mdash; theme, accent, start and end of day, sound mix</li>
+</ul>
+<p>None of this is transmitted anywhere. There is no Ease account to attach it to, and no server that holds it. If you delete the app, it is gone.</p>
+
+<h2>The one thing that leaves your device</h2>
+<p>The Plan screen turns a spoken or typed description of your day into a list of tasks. To do that well, it sends what you wrote to a server operated by Ease, which runs an open&#8209;weight AI model on <strong>Cloudflare Workers AI</strong>. Ease tells you this on the screen itself, before the first time it happens.</p>
+
+<h3>Exactly what is sent</h3>
+<ul>
+  <li>The text you spoke or typed on the Plan screen</li>
+  <li>The current date and time, and the date you are planning for</li>
+  <li>Your time zone (for example <code>Europe/London</code>) and country or region code (for example <code>GB</code>) &mdash; so &ldquo;tomorrow at 8&rdquo; resolves to the right moment</li>
+  <li>A random identifier created when you install Ease, used only to apply a fair daily limit</li>
+</ul>
+
+<h3>What is not sent</h3>
+<p>No name, no email address, no account, no Apple Account details, no advertising identifier, no device identifier, and no location. The random install identifier is not linked to you or to anything else about you; it is stored only on your device, it is not shared with anyone, and it is replaced if you delete and reinstall the app.</p>
+
+<h3>What happens to it</h3>
+<p>The text is passed to the model, the resulting task list is returned to your iPhone, and the text is discarded. <strong>It is not stored and it is not logged.</strong> The only thing kept on the server is a count of how many requests that random install identifier has made today, which is deleted automatically within 36 hours.</p>
+
+<h3>Who else is involved</h3>
+<p>No one. The model is open&#8209;weight and hosted by Cloudflare, so there is no third&#8209;party AI company involved and your text does not leave Cloudflare&rsquo;s network. Ease uses no advertising networks, no analytics providers and no third&#8209;party tracking software &mdash; there are no third&#8209;party software libraries in the app at all.</p>
+
+<h3>If you would rather it didn&rsquo;t</h3>
+<p>Don&rsquo;t use the Plan screen, or use it with no connection. Ease understands you on the device instead, and the rest of the app is unaffected. Nothing else in Ease ever contacts a server.</p>
+
+<h2>Speech and dictation</h2>
+<p>When you speak a task, the recognition is performed by Apple&rsquo;s speech framework <strong>on your device</strong>. The audio is not sent to Ease and not sent to Apple. What you get back is text, in the app, on your phone. If that text is then used to plan a day, the section above applies to the text and not to the recording.</p>
+<p>Voice notes you record in the evening check-in are saved as files on your device and are never transmitted.</p>
+
+<h2>Calendar</h2>
+<p>If you allow it, Ease reads your calendar so existing events appear on the timeline as fixed blocks to plan around. Access is <strong>read&#8209;only</strong> &mdash; Ease never creates, edits or deletes an event. Your events are never transmitted and are never stored by Ease; they are read for display and nothing more. You can decline, or withdraw access later in the iPhone Settings app, and Ease keeps working without it.</p>
+
+<h2>Photos and the camera</h2>
+<p>You can turn a picture into a task. Pictures chosen from your library go through Apple&rsquo;s system photo picker, which runs outside the app &mdash; Ease has no access to your photo library and never asks for it, and only receives the single image you pick. The camera is used only if you take a photo yourself, at the moment you tap the button.</p>
+<p>Reading text out of a picture uses Apple&rsquo;s on&#8209;device Vision framework. Images are stored in Ease&rsquo;s own storage on your iPhone and are never uploaded.</p>
+
+<h2>iCloud</h2>
+<p>Ease uses Apple&rsquo;s iCloud key&#8209;value storage for exactly one purpose: remembering whether you have already claimed the free month offered for sharing the app. That is a single flag and a single date, tied to your Apple Account so the offer works once rather than once per device. No tasks, no check-ins and no other content are stored in iCloud. This is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s privacy policy</a>; Ease cannot see your Apple Account details.</p>
+
+<h2>Subscriptions and payment</h2>
+<p>Ease Plus is an auto&#8209;renewing subscription sold through Apple&rsquo;s App Store. <strong>All payment is handled by Apple.</strong> Ease never sees and never receives your name, payment card, billing address or Apple Account. The app only asks Apple whether a valid subscription exists, and gets back yes or no. Managing, cancelling or requesting a refund for a subscription is done through Apple, in the iPhone Settings app under your name &rarr; Subscriptions.</p>
+
+<h2>What Ease does not do</h2>
+<ul>
+  <li>No accounts, no sign&#8209;up, no password, no email address collected</li>
+  <li>No analytics, telemetry, crash reporting or usage measurement</li>
+  <li>No advertising, no advertising identifier, no advertising networks</li>
+  <li>No tracking of you across apps or websites, by anyone</li>
+  <li>No selling, renting or sharing of your information &mdash; there is nothing held to sell</li>
+  <li>No profiling, and no automated decisions that have any legal effect on you</li>
+</ul>
+
+<h2>Children</h2>
+<p>Ease is a general&#8209;audience productivity app and is not directed at children. It knowingly collects no personal information from anyone, of any age.</p>
+
+<h2>Your control over your information</h2>
+<p>Because everything lives on your device, you control it directly:</p>
+<ul>
+  <li><strong>See it</strong> &mdash; it is all visible in the app</li>
+  <li><strong>Export it</strong> &mdash; Settings &rarr; Export my data, which writes your tasks and check-ins to a file you choose where to save</li>
+  <li><strong>Delete it</strong> &mdash; Settings &rarr; Erase all data permanently removes every task and check-in on the device. Deleting the app removes everything, your settings included</li>
+  <li><strong>Withdraw a permission</strong> &mdash; microphone, speech, camera and calendar can each be turned off at any time in the iPhone Settings app</li>
+</ul>
+<p>If you are in the UK, EU or another region with data protection rights &mdash; access, correction, erasure, portability, objection &mdash; those rights are satisfied by the controls above, because there is no copy of your information anywhere else for Ease to act on. If you believe something has been missed, write to the address below and it will be dealt with.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the revised version will be posted on this page with a new effective date. Material changes will also be described in the app&rsquo;s release notes. The date at the top of this page always tells you which version you are reading.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy, or about anything Ease does with your information:</p>
+<p class="lede"><a href="mailto:qangdev@gmail.com">qangdev@gmail.com</a></p>
+
+<footer>
+  <p><a href="/">Support</a></p>
+  <p>&copy; 2026 Ease. All rights reserved.</p>
+</footer>
+
+</main>
+</body>
+</html>
