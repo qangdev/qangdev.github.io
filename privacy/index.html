@@ -13,17 +13,17 @@
 <header>
   <a class="wordmark" href="/">Ease</a>
   <h1>Privacy Policy</h1>
-  <p class="sub">Effective 31 August 2026 &middot; applies to the Ease iPhone app</p>
+  <p class="sub">Effective 3 September 2026 &middot; applies to the Ease iPhone and Apple&nbsp;Watch apps</p>
 </header>
 
 <div class="card">
   <h2>The short version</h2>
-  <p class="lede">Ease has no accounts, no analytics, no advertising and no tracking of any kind. Your tasks, check-ins, photos, voice notes and settings are stored on your iPhone and stay there.</p>
+  <p class="lede">Ease has no accounts, no analytics, no advertising and no tracking of any kind. Your tasks, check-ins, photos, voice notes and settings are stored on your own devices and, if you use iCloud, synced between them through your own Apple Account. They never reach a server belonging to Ease.</p>
   <p><strong>One thing leaves your device</strong>, and only when you use one screen: when you plan a day by speaking or typing it on the Plan screen, that text is sent to Ease&rsquo;s own server so it can be sorted into tasks. It is not stored there and it is not linked to you. Everything below is the detail.</p>
 </div>
 
-<h2>What stays on your device</h2>
-<p>All of it, apart from the one exception in the next section. Ease keeps the following in its own storage on your iPhone, shared only with its own widgets and share extension:</p>
+<h2>What stays on your devices</h2>
+<p>All of it, apart from the one exception in the next section. Ease keeps the following in its own storage on your iPhone &mdash; shared with its own widgets, its share extension and, through your iCloud, the Ease app on your Apple&nbsp;Watch:</p>
 <ul>
   <li>Tasks, their times, durations and repeat rules, and whether you completed, skipped or moved them</li>
   <li>Your daily check-ins and how the day felt</li>
@@ -32,7 +32,7 @@
   <li>Focus session history, and the patterns Ease works out from it</li>
   <li>Your settings &mdash; theme, accent, start and end of day, sound mix</li>
 </ul>
-<p>None of this is transmitted anywhere. There is no Ease account to attach it to, and no server that holds it. If you delete the app, it is gone.</p>
+<p>None of this is sent to Ease. There is no Ease account to attach it to, and no server of ours that holds it. It does sync between your own devices &mdash; your iPhone and your Apple&nbsp;Watch &mdash; through your Apple Account, which is described under iCloud below.</p>
 
 <h2>The one thing that leaves your device</h2>
 <p>The Plan screen turns a spoken or typed description of your day into a list of tasks. To do that well, it sends what you wrote to a server operated by Ease, which runs an open&#8209;weight AI model on <strong>Cloudflare Workers AI</strong>. Ease tells you this on the screen itself, before the first time it happens.</p>
@@ -69,7 +69,10 @@
 <p>Reading text out of a picture uses Apple&rsquo;s on&#8209;device Vision framework. Images are stored in Ease&rsquo;s own storage on your iPhone and are never uploaded.</p>
 
 <h2>iCloud</h2>
-<p>Ease uses Apple&rsquo;s iCloud key&#8209;value storage for exactly one purpose: remembering whether you have already claimed the free month offered for sharing the app. That is a single flag and a single date, tied to your Apple Account so the offer works once rather than once per device. No tasks, no check-ins and no other content are stored in iCloud. This is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s privacy policy</a>; Ease cannot see your Apple Account details.</p>
+<p>If you are signed in to iCloud, Ease keeps your tasks and check-ins in the private area of your own Apple Account, so the same day appears on your iPhone and your Apple&nbsp;Watch. This is what makes the watch app work at all: a watch is a separate device and cannot read your phone&rsquo;s storage directly.</p>
+<p>This is your iCloud, not ours. The data sits in the private database of your Apple Account, which <strong>Ease cannot read, query or administer</strong> &mdash; we have no way to see your tasks and no server that receives them. Apple handles the storage and transfer under <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s privacy policy</a>, and Ease never sees your Apple Account details.</p>
+<p>You can turn it off. In the iPhone Settings app, under your name &rarr; iCloud, switch Ease off and it goes back to keeping everything on the device alone. The app works exactly the same, except that your Apple&nbsp;Watch will no longer receive your day.</p>
+<p>Ease also uses iCloud key&#8209;value storage for one small thing: remembering whether you have already claimed the free month offered for sharing the app. That is a single flag and a single date, tied to your Apple Account so the offer works once rather than once per device.</p>
 
 <h2>Subscriptions and payment</h2>
 <p>Ease Plus is an auto&#8209;renewing subscription sold through Apple&rsquo;s App Store. <strong>All payment is handled by Apple.</strong> Ease never sees and never receives your name, payment card, billing address or Apple Account. The app only asks Apple whether a valid subscription exists, and gets back yes or no. Managing, cancelling or requesting a refund for a subscription is done through Apple, in the iPhone Settings app under your name &rarr; Subscriptions.</p>
@@ -88,7 +91,7 @@
 <p>Ease is a general&#8209;audience productivity app and is not directed at children. It knowingly collects no personal information from anyone, of any age.</p>
 
 <h2>Your control over your information</h2>
-<p>Because everything lives on your device, you control it directly:</p>
+<p>Because everything lives on your own devices and your own Apple Account, you control it directly:</p>
 <ul>
   <li><strong>See it</strong> &mdash; it is all visible in the app</li>
   <li><strong>Export it</strong> &mdash; Settings &rarr; Export my data, which writes your tasks and check-ins to a file you choose where to save</li>
