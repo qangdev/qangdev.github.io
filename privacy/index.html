@@ -13,7 +13,7 @@
 <header>
   <a class="wordmark" href="/">Ease</a>
   <h1>Privacy Policy</h1>
-  <p class="sub">Effective 3 September 2026 &middot; applies to the Ease iPhone and Apple&nbsp;Watch apps</p>
+  <p class="sub">Effective 13 September 2026 &middot; applies to the Ease iPhone and Apple&nbsp;Watch apps</p>
 </header>
 
 <div class="card">
@@ -35,7 +35,7 @@
 <p>None of this is sent to Ease. There is no Ease account to attach it to, and no server of ours that holds it. It does sync between your own devices &mdash; your iPhone and your Apple&nbsp;Watch &mdash; through your Apple Account, which is described under iCloud below.</p>
 
 <h2>The one thing that leaves your device</h2>
-<p>The Plan screen turns a spoken or typed description of your day into a list of tasks. To do that well, it sends what you wrote to a server operated by Ease, which runs an open&#8209;weight AI model on <strong>Cloudflare Workers AI</strong>. Ease tells you this on the screen itself, before the first time it happens.</p>
+<p>The Plan screen turns a spoken or typed description of your day into a list of tasks. To do that well, it sends what you wrote to a server operated by Ease, which runs an open&#8209;weight AI model on <strong>Cloudflare Workers AI</strong>. Ease also says this in the app, under Settings &rarr; Privacy &amp; permissions.</p>
 
 <h3>Exactly what is sent</h3>
 <ul>
@@ -43,19 +43,21 @@
   <li>The current date and time, and the date you are planning for</li>
   <li>Your time zone (for example <code>Europe/London</code>) and country or region code (for example <code>GB</code>) &mdash; so &ldquo;tomorrow at 8&rdquo; resolves to the right moment</li>
   <li>A random identifier created when you install Ease, used only to apply a fair daily limit</li>
+  <li>Whether you subscribe to Ease Plus, so the right daily limit applies</li>
 </ul>
 
 <h3>What is not sent</h3>
-<p>No name, no email address, no account, no Apple Account details, no advertising identifier, no device identifier, and no location. The random install identifier is not linked to you or to anything else about you; it is stored only on your device, it is not shared with anyone, and it is replaced if you delete and reinstall the app.</p>
+<p>No name, no email address, no account, no Apple Account details, no advertising identifier, no device identifier, and no precise location. The random install identifier is not linked to you or to anything else about you; it is stored only on your device, it is not shared with anyone, and it is replaced if you delete and reinstall the app.</p>
 
 <h3>What happens to it</h3>
-<p>The text is passed to the model, the resulting task list is returned to your iPhone, and the text is discarded. <strong>It is not stored and it is not logged.</strong> The only thing kept on the server is a count of how many requests that random install identifier has made today, which is deleted automatically within 36 hours.</p>
+<p>The text is passed to the model, the resulting task list is returned to your iPhone, and the text is discarded. <strong>It is not stored and it is not logged.</strong> The only things kept on the server are a count of how many requests that random install identifier has made today and a single total across everyone, both deleted automatically within 36 hours.</p>
+<p>Like any connection over the internet, the request arrives from your IP address. The server uses that address for up to a minute, as the key of a limit on bursts of requests in Cloudflare&rsquo;s rate limiter, and <strong>does not store or log it</strong>.</p>
 
 <h3>Who else is involved</h3>
 <p>No one. The model is open&#8209;weight and hosted by Cloudflare, so there is no third&#8209;party AI company involved and your text does not leave Cloudflare&rsquo;s network. Ease uses no advertising networks, no analytics providers and no third&#8209;party tracking software &mdash; there are no third&#8209;party software libraries in the app at all.</p>
 
 <h3>If you would rather it didn&rsquo;t</h3>
-<p>Don&rsquo;t use the Plan screen, or use it with no connection. Ease understands you on the device instead, and the rest of the app is unaffected. Nothing else in Ease ever contacts a server.</p>
+<p>Don&rsquo;t use the Plan screen, or use it with no connection. Ease understands you on the device instead, and the rest of the app is unaffected. Nothing else in Ease ever contacts a server of ours.</p>
 
 <h2>Speech and dictation</h2>
 <p>When you speak a task, the recognition is performed by Apple&rsquo;s speech framework <strong>on your device</strong>. The audio is not sent to Ease and not sent to Apple. What you get back is text, in the app, on your phone. If that text is then used to plan a day, the section above applies to the text and not to the recording.</p>
