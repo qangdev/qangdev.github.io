@@ -57,6 +57,10 @@ h1 {
 
 .sub { color: var(--muted); margin: 0; font-size: 0.95rem; }
 
+/* Apple's badge: shown at its 40px minimum height, never recoloured. */
+.badge { display: inline-block; margin-top: 1.5rem; }
+.badge img { display: block; height: 40px; width: auto; }
+
 h2 {
   font: 600 1.25rem/1.35 Georgia, "Times New Roman", serif;
   margin: 2.75rem 0 0.75rem;
